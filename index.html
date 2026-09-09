@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- This viewport tag is strictly required to fix the mobile zoom issue -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <title>Classic Business Centre | Goa's Print & Design Hub</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- Branch Selection Modal (Popup) -->
+    <div id="branch-modal" class="modal-overlay">
+        <div class="modal-content">
+            <h2>Welcome to Classic Business Centre</h2>
+            <p>Which Classic Business Centre branch are you visiting or ordering from today?</p>
+            <div id="branch-list" class="branch-options">
+                <!-- Branch buttons will be injected here by JS -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Navigation -->
+    <header class="navbar">
+        <div class="nav-container">
+            <div class="brand">
+                <img src="images/logo.png" alt="Classic Business Centre" class="logo">
+                <div class="brand-text">
+                    <h1>Classic Business Centre</h1>
+                    <span>Goa's Print & Design Hub</span>
+                </div>
+            </div>
+            <div class="nav-actions">
+                <button id="change-branch-btn" class="branch-indicator">
+                    📍 <span id="current-branch-name">Select Branch</span> [CHANGE]
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <span class="badge">CMYK Ultra-High Precision Printing</span>
+            <h2>Fast, High-Precision Print & Document Solutions in Goa.</h2>
+            <p>With over 25 years of experience, we are Goa's premier print house. We specialize in architectural blueprints, business cards, vinyl banners, hard binding, custom stickers, and high-volume digital prints across our strategic branch locations.</p>
+            <div class="hero-buttons">
+                <button class="btn-primary" onclick="initiateWhatsAppOrder('General Inquiry')">🚀 Start WhatsApp Order</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section (Sourced from Brochure) -->
+    <section class="services">
+        <h3>Our Services</h3>
+        <div class="grid-container">
+            <div class="card">
+                <h4>Digital CAD Plotting</h4>
+                <p>Monochrome and Colour Plotting up to 42" wide on paper, coated paper, tracing paper, Hi-Glossy Film, Vinyl, and Canvas.</p>
+            </div>
+            <div class="card">
+                <h4>Jumbo Printing & Lamination</h4>
+                <p>Wide variety of Jumbo Scanning & Printing for architectural and engineering drawings, paired with optimal jumbo lamination.</p>
+            </div>
+            <div class="card">
+                <h4>Offset & Flex Printing</h4>
+                <p>High-volume brochures, leaflets, and calendars. Solvent & Vinyl banner printing for engaging marketing materials.</p>
+            </div>
+            <div class="card">
+                <h4>Binding & Finishing</h4>
+                <p>Professional Spiral, Wiro, and Hard Book binding using modern methods to prevent tearing.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Machinery Section -->
+    <section class="machinery">
+        <h3>State-of-the-Art Machinery</h3>
+        <div class="grid-container machinery-grid">
+            
+            <div class="machine-card">
+                <img src="images/xerox-1000.jpg" alt="Xerox 1000 Digital Printer" loading="lazy">
+                <div class="machine-info">
+                    <h4>Xerox 1000</h4>
+                    <p>Digitally mastered for fine-tuned image quality. Prints 100 ppm, handling weights from 100 gsm to a hefty 350 gsm.</p>
+                </div>
+            </div>
+
+            <div class="machine-card">
+                <img src="images/xerox-exi-180.jpg" alt="Xerox EX-i 180" loading="lazy">
+                <div class="machine-info">
+                    <h4>Xerox EX-i 180</h4>
+                    <p>High Quality Digital Colour Print up to 13x26 Inch media size. Stunning, smooth vector gradients.</p>
+                </div>
+            </div>
+
+            <div class="machine-card">
+                <img src="images/vinyl-flex-printer.jpg" alt="Flex and Vinyl Printer" loading="lazy">
+                <div class="machine-info">
+                    <h4>Solvent & Vinyl Printers</h4>
+                    <p>Heavy-duty large format machines for vibrant flex banners, billboards, and custom vinyl prints.</p>
+                </div>
+            </div>
+
+            <div class="machine-card">
+                <img src="images/cad-plotter.jpg" alt="CAD Plotter" loading="lazy">
+                <div class="machine-info">
+                    <h4>Digital Plotters</h4>
+                    <p>High-precision 2400 DPI plotting for architectural blueprints and ammonia blue prints.</p>
+                </div>
+            </div>
+            
+            <div class="machine-card">
+                <img src="images/offset-machine.jpg" alt="Offset Printing Machine" loading="lazy">
+                <div class="machine-info">
+                    <h4>Offset Press</h4>
+                    <p>High-volume commercial presses for bill books, pamphlets, and mass flyer production.</p>
+                </div>
+            </div>
+
+             <div class="machine-card">
+                <img src="images/jumbo-laminator.jpg" alt="Jumbo Laminator" loading="lazy">
+                <div class="machine-info">
+                    <h4>Jumbo Laminators</h4>
+                    <p>Wide-format encapsulation machinery for weather-proofing and preserving large prints.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <script src="js/branches.js"></script>
+    <script src="js/order-builder.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
